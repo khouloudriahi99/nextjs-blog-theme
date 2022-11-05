@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="title">
+<h1> flip card </h1>
+<p>bonjour la vie</p>
+</div>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+<img src="m.jpg">
+</div>
+<div class="flip-card-back"> <h2>why tell me <br>why</h2></div>
+<div class=" back-header">
+
+<h1>kkkkkkk</h1>
+</div>
+<div class="back-footer">
+<h2>onetwothree</h2>
+<p>jjjjjjjjjjjjj</p>
+</div>
+</div>
+</div>
+</div>   
+</body>
+<style>
+.title{
+text-align: center;
+margin: 40px auto 30px;
+}
+.flip-card
+{
+width:335px;
+height: 250px;
+margin: auto;
+}
+.flip-card-back
+{
+background-color : #ff5722;
+color: #dff;
+transform: rotateY(-180deg);
+z-index: 1; 
+}
+.flip-card-back .back-header
+{ 
+height: 65%;
+text-align: center;
+}
+.flip-card-back .back-header img  
+{
+width: 75%;
+margin-top: 20px;
+}  
+.flip-card-inner
+{
+position: relative; 
+height:100%
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+.flip-card-back, .flip-card-front
+{
+position: absolute;
+width: 100%;
+height: 290%;
+backface-visibility: hidden; 
+}
+.flip-card:hover .flip-card-inner
+{
+transform: rotateY(180deg);
+} 
+</style>
+</html>
